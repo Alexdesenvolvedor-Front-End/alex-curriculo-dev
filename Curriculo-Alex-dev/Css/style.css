@@ -5,3 +5,107 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/* Estilo de cores */
+
+
+:root {
+    --cor-de-fundo: #f5f5f5;
+    --background-h2: #e9ecef;
+    --cor-h1: #2c3e50;
+    --cor-h2: #34495e;
+    --cor-p: #555;
+}
+
+
+
+
+body, html{
+    background-color: var(--cor-de-fundo);
+    padding: 2em;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+
+
+section{
+    padding: .2em;
+   
+}
+
+
+
+
+
+header,
+.main-title {
+    color: var(--cor-h1);
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+.title {
+    color: var(--cor-p);
+    font-size: 1em;
+
+}
+
+
+
+.section-title {
+    background-color: var(--background-h2);
+    padding: .2em 1em;
+    color: var(--cor-h2);
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-left: .4em;
+
+}
+
+
+
+
+.description {
+    color: #2980b9;
+    font-size: .9em;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+
+
+
+li {
+    display: inline-block;
+    background-color: #e1f0fb;
+    color: #1c1c1c;
+    padding: 0.5em 0.8em;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: .9em;
+
+}
+
+
+
+.container{
+    max-width: 1200px;
+}
