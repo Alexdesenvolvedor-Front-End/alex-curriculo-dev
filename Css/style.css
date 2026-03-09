@@ -31,12 +31,11 @@
 body,
 html {
     background-color: var(--cor-de-fundo);
-    padding: 2em;
+    margin: 1em;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+
 }
-
-
 
 
 
@@ -62,6 +61,7 @@ header,
 .description {
     color: var(--cor-do-paragrafo);
     font-size: .9em;
+    padding-bottom: 1em;
 
 }
 
@@ -122,11 +122,84 @@ li {
 
 
 
-
 /* Footer */
 
 
-.rodape{
+.rodape {
     color: var(--cor-do-footer);
     text-align: center;
+}
+
+
+
+
+
+
+
+/* Media Query*/
+
+
+/* Tablet 768px */
+
+
+@media (min-width: 768px) {
+
+    .container-curriculo {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* Botões links */
+    .link {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+}
+
+
+/* Desktops 1024px */
+
+
+@media (min-width: 1024px) {
+    .container-curriculo {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+
+    .section-title {
+        font-size: 1.9em;
+        display: block;
+        background-color: var(--cor-do-badges-);
+        padding: .2em 0;
+        padding-left: .5em;
+        margin-top: 1em;
+
+    }
+
+
+
+    .link {
+        display: inline-block;
+        padding: .6em 1em;
+        margin: .5em;
+        transition: transform 0.2s ease;
+    }
+
+
+    .link:hover {
+        /* transform: scale(1.05) rotate(5deg); */
+        background-color: transparent;
+        color: var(--cor-do-texto-badges);
+        transform: scale(1.05) rotate(3deg) translateY(-2px) translateX(1px);
+
+    }
+
+
+    .rodape{
+        font-size: .9em;
+    }
 }
